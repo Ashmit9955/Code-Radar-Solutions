@@ -2,7 +2,7 @@
 
 int main() {
     int num1,num2,num3;
-    float average = (num1+num2+num3)/3;
-    printf("Average: %.2f",average);
+    int average = (num1+num2+num3)/3;
+    printf("Average: %d",average);
     return 0;
 }
