@@ -8,7 +8,7 @@ int main() {
     if((r<0)){
         printf("True");
     }
-    else if(r>0){
+    else{
         printf("False");
     }
     return 0;
