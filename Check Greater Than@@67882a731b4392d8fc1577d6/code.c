@@ -3,12 +3,12 @@
 int main() {
     int num1,num2;
     scanf("%d%d",&num1,&num2);
-    bool result;
+    int result;
     if(num1>num2){
-        result = true;
+        result = 1;
     }
     else{
-        result = false;
+        result = 0;
     }
     printf("%s",result);
     return 0;
