@@ -3,6 +3,7 @@
 
 int main() {
     int num1,num2;
+    scanf("%d%d",&num1,&num2)
     int r = num1/num2;
     if(r>0){
         printf("False");
