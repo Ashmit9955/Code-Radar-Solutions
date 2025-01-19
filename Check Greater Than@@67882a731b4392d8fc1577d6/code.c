@@ -10,6 +10,6 @@ int main() {
     else{
         result = 0;
     }
-    printf("%s",result);
+    printf("%d",result);
     return 0;
 }
