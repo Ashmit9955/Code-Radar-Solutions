@@ -2,9 +2,9 @@
 
 
 int main() {
-    float num1,num2;
-    scanf("%f%f",&num1,&num2);
-    int r = num1/num2;
+    int num1,num2;
+    scanf("%d%d",&num1,&num2);
+    float r = num1/num2;
     if(!(r<0)){
         printf("False");
     }
