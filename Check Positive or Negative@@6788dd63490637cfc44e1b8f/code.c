@@ -5,8 +5,13 @@ int main() {
     scanf("%d",&num1);
     if(num1>0){
         printf("Positive");
-    }else{
+    }
+    else if(num1<0){
         printf("Negative");
+    }
+    else{
+        printf("Zero");
+    
     }
     return 0;
 }
