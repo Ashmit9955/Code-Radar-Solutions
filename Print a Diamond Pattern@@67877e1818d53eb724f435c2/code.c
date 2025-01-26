@@ -12,13 +12,16 @@ int main() {
         }
         printf("\n");
         for(int m = n; m>=1 ; m--){
-            for(int p = n; p>=m; p--){
+        if(i!= 1){    for(int p = n; p>=m; p--){
                 printf(" ");
             }
             for(int q = i; q<= (i*2) -1; q++){
                 printf("*");
             }
             printf("\n");
+        }else{
+            continue;
+        }
         }
     }
     return 0;
