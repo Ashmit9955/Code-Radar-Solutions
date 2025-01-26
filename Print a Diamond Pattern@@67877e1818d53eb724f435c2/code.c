@@ -16,7 +16,7 @@ int main() {
         for(int p = 1; p <= m; p++){
             printf(" ");
         }
-        for(int q = 0; q<= 2*(n-m)-1; q++){
+        for(int q = 0; q<= 2*(n-m)-2; q++){
             printf("*");
         }
         printf("\n");
