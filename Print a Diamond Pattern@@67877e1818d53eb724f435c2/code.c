@@ -11,17 +11,6 @@ int main() {
             printf("*");
         }
         printf("\n");
-        for(int m = n; m>=1 ; m--){
-        if(i!= 1){    for(int p = n; p>=m; p--){
-                printf(" ");
-            }
-            for(int q = i; q<= (i*2) -1; q++){
-                printf("*");
-            }
-        }else{
-            continue;
-        }
-        }
     }
     return 0;
 }
