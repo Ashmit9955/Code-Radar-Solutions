@@ -6,8 +6,9 @@ int main() {
     for(int i = 65; i < 65+n; i++){
         int x = 65;
         for(int j = n; j>= 1;j--){
-            printf("%d",x++);
+            printf("%c ",x++);
         }
+        printf("\n");
     }
     return 0;
 }
