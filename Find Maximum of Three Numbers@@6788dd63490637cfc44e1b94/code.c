@@ -7,7 +7,7 @@ int main() {
     if(n>p && n>q){
         printf("%d",n);
     }
-    else if(p > n; p > q){
+    else if(p > n && p > q){
         printf("%d",p);
     }else{
         printf("%d",q);
