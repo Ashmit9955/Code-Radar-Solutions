@@ -1,25 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n,p,q;
-    scanf("%d%d%d",&n,&p,&q);
-    int max;
-    if(n>p && n >q){
-        max = n;
-    }
-    else if(p>n && p >q){
-        max = p;
-    }else{
-        max = q;
-    }
-    // 
-    if(max > (n+p) || max>(n+q) || max>(p+q)){
-        printf("Invalid");
-    }else{
-        printf("Valid");
-    }
-
-
+   int n,p,q;
+   scanf("%d%d%d",&n,&p,&q);
+   if(n<(p+q) && p< (n+q) && q<(n+p)){
+    printf("Valid");
+   }else{
+    printf("Invalid");
+   }
 
     return 0;
 }
