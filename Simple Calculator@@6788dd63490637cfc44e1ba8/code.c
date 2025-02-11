@@ -2,20 +2,20 @@
 int main(){
     double x,y;
     char z;
-    scanf("%d%d",&x,&y);
+    scanf("%lf%lf",&x,&y);
     scanf(" %c",&z);
     switch(z){
         case '+':
-        printf("%d",x+y);
+        printf("%lf",x+y);
         break;
         case '-':
-        printf("%d",x-y);
+        printf("%lf",x-y);
         break;
         case '*':
-        printf("%d",x*y);
+        printf("%lf",x*y);
         break;
         case '/':
-        printf("%d",x/y);
+        printf("%lf",x/y);
         break;
     }
     return 0;
