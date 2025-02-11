@@ -4,7 +4,8 @@ int main(){
     scanf("%d%d",&x,&y);
     if(x>y){
         printf("First");
-    }else if(y>x){
+    }
+    else if(y>x){
         printf("Second");
     }else{
         printf("Equal");
