@@ -17,4 +17,5 @@ int main(){
         printf("%lf",x/y);
         break;
     }
+    return 0;
 }
