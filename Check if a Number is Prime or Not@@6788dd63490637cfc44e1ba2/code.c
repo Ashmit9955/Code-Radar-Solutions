@@ -7,7 +7,7 @@ int main() {
     if(x<=1){
         isPrime = 0;
     }else{
-        for(int i=2 ; i<x; i++){
+        for(int i=2 ; i<= sqrt(x); i++){
             if(x%i == 0){
                 isPrime = 0;
                 break;
