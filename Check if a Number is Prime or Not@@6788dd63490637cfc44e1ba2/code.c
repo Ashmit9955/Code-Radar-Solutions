@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<math.h>
-int main(){
+#include <stdio.h>
+#include <math.h>
+int main() {
     int x;
     scanf("%d",&x);
     int isPrime = 1;
