@@ -1,7 +1,20 @@
 #include <stdio.h>
 int main(){
-    double x,y,z;
-    scanf("%lf%lf%lf",&x,&y,&z);
-    printf("Hello");
-    return 0;
+    double x,y;
+    char z;
+    scanf("%lf%lf&c",&x,&y,&z);
+    switch(z){
+        case '+':
+        printf("%lf",x+y);
+        break;
+        case '-':
+        printf("%lf",x-y);
+        break;
+        case '*':
+        printf("%lf",x*y);
+        break;
+        case '/':
+        printf("%lf",x/y);
+        break;
+    }
 }
