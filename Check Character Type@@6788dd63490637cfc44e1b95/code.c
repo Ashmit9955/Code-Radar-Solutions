@@ -22,7 +22,7 @@ int main() {
         }
     }
     else{
-        printf("Special character");
+        printf("Special Character");
     }
     return 0;
 }
