@@ -3,7 +3,7 @@ int main(){
     double x,y;
     char z;
     scanf("%lf%lf",&x,&y);
-    scanf("%c",&z);
+    scanf(" %c",&z);
     switch(z){
         case '+':
         printf("%lf",x+y);
@@ -12,7 +12,7 @@ int main(){
         printf("%lf",x-y);
         break;
         case '*':
-        printf("%lf",x*y);
+        printf("%d",x*y);
         break;
         case '/':
         printf("%lf",x/y);
