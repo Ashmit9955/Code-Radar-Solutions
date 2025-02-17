@@ -3,7 +3,7 @@
 int main(){
     int x ,y;
     scanf("%d %d"&y);
-    if(y== math.sqrt(x)){
+    if(y== sqrt(x)){
         printf("Yes");
     }else{
         printf("No");
