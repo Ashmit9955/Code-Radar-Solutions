@@ -2,8 +2,8 @@
 #include <math.h>
 int main(){
     int x ,y;
-    scanf("%d %d",&x,&y);
-    if(y*y == x){
+    scanf("%d %d"&y);
+    if(y== math.sqrt(x)){,&x,
         printf("Yes");
     }else{
         printf("No");
