@@ -2,9 +2,10 @@
 #include <math.h>
 
 int main(){
-    float x ,y;
+    int x ,y;
     scanf("%d %d",&x,&y);
-    if(pow(x,0.5) == y){
+    int a = pow(x,0.5);
+    if(a == y){
         printf("Yes");
     }else{
         printf("No");
