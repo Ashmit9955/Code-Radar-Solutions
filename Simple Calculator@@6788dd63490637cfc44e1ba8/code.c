@@ -1,27 +1,27 @@
-#include<stdio.h>
-int main()
-{
-    float a,b;
-    char x;
-    scanf("%f%f",&a,&b);
-    scanf(" %c",&x);
-    switch(x){
+#include <stdio.h>
+int main(){
+    float x,y;
+    char z;
+    scanf("%f%f",&x,&y);
+    scanf(" %c",&z);
+    switch(z){
         case '+':
-        printf("%f",x+y);
+        printf("%.0f",a+b);
         break;
         case '-':
-        printf("%f",x-y);
+        printf("%.0f",a-b);
         break;
         case '*':
-        printf("%f",x*y);
+        printf("%.0f",a*b);
         break;
         case '/':
         if(y>0){
-            printf("%f",x/y);
+        printf("%.0f",a/b);
         }else{
             printf("error");
         }
         break;
+        
     }
     return 0;
 }
