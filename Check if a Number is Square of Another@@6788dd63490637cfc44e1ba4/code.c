@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-    int x ,y;
+    float x ,y;
     scanf("%d %d",&x,&y);
     if(pow(x,0.5) == y){
         printf("Yes");
