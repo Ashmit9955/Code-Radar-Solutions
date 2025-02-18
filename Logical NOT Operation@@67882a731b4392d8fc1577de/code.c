@@ -3,11 +3,11 @@
 int main() {
     int num1;
     scanf("%d",&num1);
-    if(num1>0){
-        printf("False");
+    if(!(num1<0)){
+        printf("True");
     }
     else{
-        printf("True");
+        printf("False");
     }
     return 0;
 }
