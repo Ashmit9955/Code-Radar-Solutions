@@ -2,6 +2,9 @@
 int main(){
     int x,y;
     scanf("%d%d",&x,&y);
-    printf("%d %d",x^y,y^x);
+    int temp = x;
+    x = y;
+    y = temp;
+    printf("%d%d",x,y);
     return 0;
 }
