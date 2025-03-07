@@ -15,8 +15,10 @@ int main(){
         if(arr[i] > Largest){
             SLargest = Largest;
             Largest = arr[i];
-        }else if(arr[i] < Largest && arr[i] > SLargest){
+        }else if(arr[i] < Largest && arr[i] > SLargest && SLargest != Largest){
             SLargest = arr[i];
+        }else{
+            SLargest = -1;
         }
     }
     printf("%d",SLargest);
