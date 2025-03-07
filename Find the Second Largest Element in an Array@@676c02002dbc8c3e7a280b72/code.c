@@ -1,14 +1,22 @@
 #include<stdio.h>
 
-int SecondLargest(int arr[]){
+int main(){
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        int x;
+        scanf("%d",&x);
+        arr[i] = x;
+    }
     int Largest = INT_MIN;
     int SLargest = INT_MIN;
-    for(int i=0; i < arr.length ; i++){
+    for(int i=0;i<n;i++){
         if(arr[i] > Largest){
-            Largest=arr[i];
-        } else if(arr[i] != arr[i] > SLargest){
+            Largest = arr[i];
+        }else if(arr[i] < Largest && arr[] > SLargest){
             SLargest = arr[i];
         }
     }
-    return SLargest;
+    printf("%d",SLargest);
+    
 }
