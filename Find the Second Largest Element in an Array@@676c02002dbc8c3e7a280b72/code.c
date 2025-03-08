@@ -17,10 +17,10 @@ int main(){
         SLargest = arr[i];
     }
    }
-   if(SLargest = -100000){
-        printf("%d",-1);
+   if(SLargest != -100000){
+        printf("%d",SLargest);
    }else{
-    printf("%d",SLargest);
+    printf("%d",-1);
    }
    
 }
