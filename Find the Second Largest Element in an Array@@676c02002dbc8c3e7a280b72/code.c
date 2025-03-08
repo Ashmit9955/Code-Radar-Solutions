@@ -17,9 +17,6 @@ int main(){
         SLargest = arr[i];
     }
    }
-   if(SLargest = INT_MIN){
-    printf("%d",-1);
-   }else{
-    printf("%d",SLargest);
-   }
+   printf("%d",SLargest);
+
 }
