@@ -1,13 +1,11 @@
 #include<stdio.h>
 #include <limits.h>
-int main(){
+int SecondLargest(int arr[] , int n){
     int n;
     scanf("%d",&n);
     int arr[n];
     for(int i=0 ; i<n ; i++){
-        int x;
-        scanf("%d",&x);
-        arr[i] = x;
+        scanf("%d",&arr[i]);
     }
     int Largest = INT_MIN;
     int SLargest = INT_MIN;
@@ -21,6 +19,9 @@ int main(){
             SLargest = -1;
         }
     }
-    printf("%d",SLargest);
-    
+    return SLargest;
+
+}
+int main(){
+   SecondLargest();   
 }
