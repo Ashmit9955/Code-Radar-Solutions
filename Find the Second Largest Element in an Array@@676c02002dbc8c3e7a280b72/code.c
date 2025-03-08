@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include <limits.h>
 int main(){
-    int Largest = INT_MIN;
-    int SLargest = INT_MIN;
+    int Largest = -100000;
+    int SLargest = -100000;
    int n;
    scanf("%d",&n);
    int arr[n];
@@ -17,6 +17,10 @@ int main(){
         SLargest = arr[i];
     }
    }
-   printf("%d",SLargest);
-
+   if(SLargest = -100000){
+        printf("%d",-1);
+   }else{
+    printf("%d",SLargest);
+   }
+   
 }
