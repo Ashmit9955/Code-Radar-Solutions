@@ -19,8 +19,5 @@ int main(){
    }
    if(SLargest != -100000){
         printf("%d",SLargest);
-   }else{
-    printf("%d",-1);
    }
-   
 }
