@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include <limits.h>
 int main(){
-     int SLargest = -100000;
+    int Largest = -100000;
+    int SLargest = -100000;
    int n;
    scanf("%d",&n);
    int arr[n];
@@ -21,4 +22,5 @@ int main(){
    }else{
     printf("%d",-1);
    }
+   
 }
