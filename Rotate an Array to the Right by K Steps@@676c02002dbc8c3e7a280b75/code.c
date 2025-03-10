@@ -8,6 +8,7 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k = k%n;
     int temp[k];
     int index = 0;
     for(int i = n-k; i<=n-1; i++){
