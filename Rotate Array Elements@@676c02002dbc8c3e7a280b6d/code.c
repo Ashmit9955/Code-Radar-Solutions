@@ -1,26 +1,26 @@
-#include <stdio.h>
-
-void Rotate(int arr[], int n, int k) {
-    for (int i = n - k; i < n; i++) {
-        printf("%d ", arr[i]);
+#include <Stdio.h>
+int main(){
+    int N;
+    scanf("%d",&N);
+    for(int i=0; i<N; i++){
+        scanf("%d",&arr[i]);
     }
-    for (int i = 0; i < n - k; i++) {
-        printf("%d ", arr[i]);
-    }
-}
-
-int main() {
-    int num[] = {1, 2, 3, 4, 5};
-    int n = sizeof(num) / sizeof(num[0]);
     int k;
-    
-    // Taking input for k
-    scanf("%d", &k);
-    
-    // If k is larger than n, we take k % n to avoid unnecessary rotations
-    k = k % n;
-    
-    Rotate(num, n, k);
-    
-    return 0;
+    scanf("%d",&k);
+    int temp[];
+    for(int i = N-k; i<=N-1; i++){
+        temp[i-k-1] = arr[i];
+    }
+    // shifting the remaining numbers by k positions
+    for(int j = n-k-1; j>=0; j--){
+        arr[j+k] = arr[j];
+    }
+    for(int i=0; i < k ; i++){
+        arr[i] = temp[i];
+    }
+    // Printing new array
+    for(int i=0; i <N; i++){
+        printf("%d\n",arr[i]);
+    }
+ 
 }
