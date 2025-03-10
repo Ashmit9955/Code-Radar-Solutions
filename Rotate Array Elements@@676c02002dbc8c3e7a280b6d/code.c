@@ -13,7 +13,7 @@ int main(){
         temp[i-k-1] = arr[i];
     }
     // shifting the remaining numbers by k positions
-    for(int j = n-k-1; j>=0; j--){
+    for(int j = N-k-1; j>=0; j--){
         arr[j+k] = arr[j];
     }
     for(int i=0; i < k ; i++){
