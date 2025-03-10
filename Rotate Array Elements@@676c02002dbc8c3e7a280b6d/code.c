@@ -8,6 +8,7 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k = k % N;
     int temp[k];
     for(int i = N-k; i<=N-1; i++){
         temp[i-k-1] = arr[i];
