@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&k);
     int temp[k];
     int index = 0;
-    for(int i = N-k; i<=N-1; i++){
+    for(int i = n-k; i<=n-1; i++){
         temp[index++] = arr[i];
     }
     // shifting the remaining numbers by k positions
