@@ -1,3 +1,4 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 int main(){
     int N;
@@ -9,8 +10,9 @@ int main(){
     int k;
     scanf("%d",&k);
     int temp[k];
+    int index = 0;
     for(int i = N-k; i<=N-1; i++){
-        temp[i-k-1] = arr[i];
+        temp[index++] = arr[i];
     }
     // shifting the remaining numbers by k positions
     int x = N-k-1;
@@ -22,7 +24,7 @@ int main(){
     for(int i=0; i < k ; i++){
         arr[i] = temp[i];
     }
-
+    
     // Printing new array
     for(int i=0; i <N; i++){
         printf("%d\n",arr[i]);
