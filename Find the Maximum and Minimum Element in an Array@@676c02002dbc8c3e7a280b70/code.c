@@ -20,6 +20,6 @@ int main(){
             Smallest = arr[i];
         }
     }
-    printf("%d %d",Largest, Smallest);
+    printf("%d %d",Smallest,Largest);
     return 0;
 }
