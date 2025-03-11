@@ -30,7 +30,7 @@ int main(){
     // Largest count then it means there are more than 1 element which is majority so will print -1
     for(int i =0; i<n ; i++){
         int count2 = 0; 
-        if(arr[i] == LargestCount){
+        if(temp[i] == LargestCount){
             count2++;
             if(count2>LargestCount){
                 result = -1;
