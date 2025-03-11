@@ -22,9 +22,7 @@ int main(){
                 break;
             }
         }
-        if(result == -1){
-           printf("%d",result);
-        }
+      printf("%d",result);
     }
     return 0;
 }
