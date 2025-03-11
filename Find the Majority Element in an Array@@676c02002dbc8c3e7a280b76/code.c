@@ -28,7 +28,7 @@ int main(){
     // what the logic i will use is if the Largest count of majority element is 3 then in the freq arr 
     // 3 should only occur 3 times and not more than 3 times, so if Largest count appears more than the 
     // Largest count then it means there are more than 1 element which is majority so will print -1
-    int count2;
+    int count2 = 0;
     for(int i =0; i<n ; i++){
         if(temp[i] == LargestCount){
             count2++;
@@ -37,7 +37,6 @@ int main(){
                 break;
             }
         }
-        count2 = 0;
     } 
     printf("%d",result);
     return 0;
