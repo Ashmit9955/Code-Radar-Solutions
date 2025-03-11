@@ -12,15 +12,18 @@ int main(){
             Smallest = arr[i];
         }
     }
-    int result = 1;
     // Now we have the Lowest value
-    for(int i = Smallest ; i<n ; i++ ){
-        if(arr[i] == i){
-            result = 1;
+    for(int i = Smallest ; i<n-1 ; i++ ){
+        int result = -1;
+        for(int j=Smallest; j<=n;j++){
+            if(arr[j] == arr[i]){
+                result = 1;
+                break;
+            }
         }
-    }else{
-        result = -1;
+        if(result == -1){
+           printf("%d",result);
+        }
     }
-
     return 0;
 }
