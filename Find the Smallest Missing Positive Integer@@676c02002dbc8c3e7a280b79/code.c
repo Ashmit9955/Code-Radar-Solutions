@@ -14,6 +14,7 @@ int main(){
         }
     }
     // Now we have the Lowest value
+    int final = -1;
     for(int i = Smallest ; i<n-1 ; i++ ){
         int result = -1;
         for(int j=Smallest; j<=n;j++){
@@ -26,7 +27,7 @@ int main(){
         final = j;
         break;
       }
-      printf("%d",final);
     }
+    printf("%d",final);
     return 0;
 }
