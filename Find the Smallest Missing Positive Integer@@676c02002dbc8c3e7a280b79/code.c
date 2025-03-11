@@ -22,7 +22,7 @@ int main(){
     }
     // now we got the Largest value also
     int final = -1;
-    for(int i = Smallest ; i<=n ; i++ ){
+    for(int i = Smallest ; i<n ; i++ ){
         int result = -1;
         for(int j=Smallest ;j<=Largest ; j++){
             if(arr[j] == arr[i]){
