@@ -38,6 +38,11 @@ int main(){
             }
         }
     } 
+    if(LargestCount > n/2){
+        continue;
+    }else{
+        result = -1;
+    }
     printf("%d",result);
     return 0;
 }
