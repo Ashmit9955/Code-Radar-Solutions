@@ -22,7 +22,11 @@ int main(){
                 break;
             }
         }
-      printf("%d",result);
+      if(result == -1){
+        final = j;
+        break;
+      }
+      printf("%d",final);
     }
     return 0;
 }
