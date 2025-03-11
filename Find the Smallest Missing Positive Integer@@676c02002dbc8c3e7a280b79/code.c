@@ -15,17 +15,17 @@ int main(){
     }
     // Now we have the Lowest value
     int final = -1;
-    for(int i = Smallest ; i<n-1 ; i++ ){
+    for(int i = Smallest ; i<=n ; i++ ){
         int result = -1;
-        for(int j=Smallest; j<=n;j++){
+        for(int j=Smallest ;j<n-1 ; j++){
             if(arr[j] == arr[i]){
                 result = 1;
                 break;
             }
+            if(result == -1){
+            final = i;
+            break;
         }
-      if(result == -1){
-        final = j;
-        break;
       }
     }
     printf("%d",final);
