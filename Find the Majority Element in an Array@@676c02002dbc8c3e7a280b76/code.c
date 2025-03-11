@@ -24,6 +24,20 @@ int main(){
             result = arr[i];
         }
     }
+    // Now checking if more than one majority element is there
+    // what the logic i will use is if the Largest count of majority element is 3 then in the freq arr 
+    // 3 should only occur 3 times and not more than 3 times, so if Largest count appears more than the 
+    // Largest count then it means there are more than 1 element which is majority so will print -1
+    int count2 = 0;
+    for(int i =0; i<n ; i++){
+        if(arr[i] == LargestCount){
+            count2++;
+            if(count2>LargestCount){
+                result = -1;
+                break;
+            }
+        }
+    } 
     printf("%d",result);
     return 0;
 }
