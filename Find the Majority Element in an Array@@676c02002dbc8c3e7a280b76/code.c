@@ -39,7 +39,7 @@ int main(){
         }
     } 
     if(LargestCount > n/2){
-        continue;
+        result = result;
     }else{
         result = -1;
     }
