@@ -24,7 +24,7 @@ int main(){
         }
     }
     for(int i= 0; i<=index; i++){
-        printf("%d",temp[i]);
+        printf("%d ",temp[i]);
     }
     return 0;
 }
