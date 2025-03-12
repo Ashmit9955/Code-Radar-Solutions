@@ -29,7 +29,7 @@ int main(){
             Hfreq[index++] = arr[i];
         }
     }
-    int Smallest = -5555;
+    int Smallest = 5555;
     for(int i=0; i<n; i++){
         if(Hfreq[i] < Smallest){
             Smallest = Hfreq[i];
