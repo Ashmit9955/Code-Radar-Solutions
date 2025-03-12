@@ -31,7 +31,7 @@ int main(){
     }
     for(int i=0; i<n; i++){
         if(Hfreq){
-            printf("%d"Hfreq[i]);
+            printf("%d",Hfreq[i]);
         }
     }
     return 0;
