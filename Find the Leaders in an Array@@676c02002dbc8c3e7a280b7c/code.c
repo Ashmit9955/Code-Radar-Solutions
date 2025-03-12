@@ -19,11 +19,10 @@ int main(){
             }
         }
         if(result == 1){
-            temp[index] = arr[i];
-            index++;
+            temp[index++] = arr[i];
         }
     }
-    for(int i= 0; i <= index; i++){
+    for(int i= 0; i < index; i++){
         printf("%d ",temp[i]);
     }
     return 0;
