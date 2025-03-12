@@ -31,7 +31,7 @@ int main(){
     }
     int Smallest = 5555;
     for(int i=0; i<n; i++){
-        if(Hfreq[i] < Smallest  && Smallest > 0){
+        if(Hfreq[i] < Smallest  && Hfreq[i] > 0){
             Smallest = Hfreq[i];
         }
     }
