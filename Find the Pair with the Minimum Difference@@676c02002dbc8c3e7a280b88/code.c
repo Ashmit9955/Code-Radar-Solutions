@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include <stdio.h>
+
 int main(){
     int n;
     scanf("%d",&n);
@@ -13,8 +15,8 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(j!=i){
-                if((arr[i] - arr[j]) < Smallest){
-                    Smallest = (arr[i] - arr[j]);
+                if(abs(arr[i] - arr[j]) < Smallest){
+                    Smallest = abs(arr[i] - arr[j]);
                     num1 = i;
                     num2 = j;
                 }
