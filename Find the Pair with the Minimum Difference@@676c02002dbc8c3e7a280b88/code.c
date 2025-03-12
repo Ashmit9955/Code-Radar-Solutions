@@ -19,6 +19,7 @@ int main(){
                     Smallest = abs(arr[i] - arr[j]);
                     num1 = i;
                     num2 = j;
+                    break;
                 }
             }
         }
