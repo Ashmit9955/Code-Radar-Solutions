@@ -23,7 +23,7 @@ int main(){
             index++;
         }
     }
-    for(int i= 0; i<index; i++){
+    for(int i= 0; i <= index; i++){
         printf("%d ",temp[i]);
     }
     return 0;
