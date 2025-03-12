@@ -23,6 +23,6 @@ int main(){
             }
         }
     }
-    printf("%d %d",num1,num2);
+    printf("%d %d",arr[num1],arr[num2]);
     return 0;
 }
