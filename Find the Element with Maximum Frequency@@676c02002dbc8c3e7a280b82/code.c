@@ -29,10 +29,12 @@ int main(){
             Hfreq[index++] = arr[i];
         }
     }
+    int Smallest = -5555;
     for(int i=0; i<n; i++){
-        if(Hfreq){
-            printf("%d",Hfreq[i]);
+        if(Hfreq[i] < Smallest){
+            Smallest = Hfreq[i];
         }
     }
+    printf("%d",Smallest);
     return 0;
 }
