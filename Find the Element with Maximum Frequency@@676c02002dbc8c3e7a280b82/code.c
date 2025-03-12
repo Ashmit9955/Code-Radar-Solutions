@@ -31,10 +31,11 @@ int main(){
     }
     int Smallest = 5555;
     for(int i=0; i<n; i++){
-        if(Hfreq[i] < Smallest){
+        if(Hfreq[i] < Smallest  && Smallest > 0){
             Smallest = Hfreq[i];
         }
     }
+
     printf("%d",Smallest);
     return 0;
 }
