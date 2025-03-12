@@ -6,8 +6,8 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
+    int temp[n];
     int index = 0;
-    int temp[n/2];
     for(int i=0; i<n;i++){
         int result = 1;
         for(int j=i; j < n-1; j++){
