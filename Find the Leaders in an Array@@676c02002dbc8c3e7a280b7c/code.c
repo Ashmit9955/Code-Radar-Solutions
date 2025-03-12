@@ -7,9 +7,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int index = 0;
-    int result = 1;
     int temp[n/2];
     for(int i=0; i<n;i++){
+        int result = 1;
         for(int j=i; j < n-1; j++){
             if(arr[i] > arr[j+1]){
                 result = 1;
