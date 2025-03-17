@@ -7,9 +7,9 @@ int main() {
     for(int i=1; i<=n; i++){
         int result = -1;
         for(int j =0; j<n; j++){
-            if( i == arr[j])[
+            if( i == arr[j]){
                 result = 1;
-            ]
+            }
         }
         if(result == -1){
             num = arr[j];
