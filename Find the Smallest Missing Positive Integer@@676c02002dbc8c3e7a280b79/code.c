@@ -1,22 +1,22 @@
 #include<stdio.h>
-int main() {
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    int num = -2;
-    for(int i=1; i<=n; i++){
+int FindNum( int n, int arr[]){
+    for(int i=1;i<=n ; i++){
         int result = -1;
-        for(int j =0; j<n; j++){
-            if( i == arr[j]){
+        for(int j = 0; j<n; j++){
+            if(i == arr[j]){
                 result = 1;
                 break;
             }
         }
         if(result == -1){
-            num = i;
-            break;
+            return i;
         }
     }
-    printf("%d",num);
+}
+int main() {
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    printf("%d",FindNum(n,arr));
     return 0;
 }
