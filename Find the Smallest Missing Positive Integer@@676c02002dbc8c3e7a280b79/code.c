@@ -15,7 +15,7 @@ int main() {
             num = i;
             break;
         }
-        printf("%d",num);
     }
+    printf("%d",num);
     return 0;
 }
