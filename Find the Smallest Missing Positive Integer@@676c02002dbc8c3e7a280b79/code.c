@@ -12,7 +12,7 @@ int main() {
             }
         }
         if(result == -1){
-            num = arr[j];
+            num = i;
             break;
         }
         printf("%d",num);
