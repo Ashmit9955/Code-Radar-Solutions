@@ -9,6 +9,7 @@ int main() {
         for(int j =0; j<n; j++){
             if( i == arr[j]){
                 result = 1;
+                break;
             }
         }
         if(result == -1){
