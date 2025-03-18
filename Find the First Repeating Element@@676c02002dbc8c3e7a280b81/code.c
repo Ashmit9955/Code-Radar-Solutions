@@ -20,5 +20,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf(Check(n,arr));
+    printf("%d",Check(n,arr));
 }
