@@ -14,7 +14,7 @@ int main(){
             if(i == j){
                 continue;
             }else if(i != j){
-                if((arr[i] - arr[j]) < Ssum){
+                if((arr[i] - arr[j]) > Ssum){
                     Ssum = arr[i] - arr[j];
                     num1 = i;
                     num2 = j;
