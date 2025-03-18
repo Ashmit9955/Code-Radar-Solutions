@@ -20,6 +20,12 @@ int main(){
             }
         }
     }   
-    printf("%d %d",arr[num2],arr[num1]);
+    if(n == 1){
+        printf("%d",-1);
+    }else if(arr[num1] < arr[num2]){
+        printf("%d %d",arr[num1],arr[num2]);
+    }else if(arr[num1] > arr[num2]){
+        printf("%d %d",arr[num2],arr[num1]);
+    }
     return 0;
 }
