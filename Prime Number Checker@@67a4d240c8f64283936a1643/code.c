@@ -11,11 +11,10 @@ int isPrime(int n){
 }
 int main(){
     int n;
-    int x = 0;
     scanf("%d",&n);
-    for(int i=1; i<=n; i++){
-        scanf("%d",&x);
-        printf(isPrime(x));
+    int arr[n];
+    for(int i=0; i<n;i++){
+        scanf("%d",&arr[i]);
     }
     return 0;
 }
