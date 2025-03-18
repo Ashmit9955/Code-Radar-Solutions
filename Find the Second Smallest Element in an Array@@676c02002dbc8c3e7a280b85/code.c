@@ -19,7 +19,7 @@ int main(){
             Ssmallest = arr[i];
         }
    }
-   if(Smallest == Ssmallest){
+   if(Ssmallest == INT_MAX){
     printf("%d",-1);
    }else{
     printf("%d",Ssmallest);
