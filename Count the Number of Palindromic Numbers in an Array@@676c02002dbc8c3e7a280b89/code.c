@@ -24,5 +24,6 @@
         for(int i=0; i<n; i++){
             sum+= isP(arr[i]);
         }
+        printf("%d",sum);
         return 0;
     }
