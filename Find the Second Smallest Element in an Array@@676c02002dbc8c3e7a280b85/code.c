@@ -8,8 +8,8 @@ int main(){
     for(int i=0;i<n; i++){
         scanf("%d",&arr[i]);
     }
-   int Smallest = INT.MAX;
-   int Ssmallest = INT.MAX;
+   int Smallest = INT_MAX;
+   int Ssmallest = INT_MAX;
 
    for(int i = 0; i<n; i++){
         if(arr[i] < Smallest){
