@@ -24,5 +24,5 @@ int main(){
     for(int i=0; i<n; i++){
         sum+=isPrime(arr[i]);
     }    
-    printf(sum);
+    printf("%d",sum);
 }
