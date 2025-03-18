@@ -13,6 +13,10 @@ int main(){
             L = arr[i];
         }
     }
-    printf("%d",L);
+    if(L == INT_MIN){
+        printf("%d",-1);
+    }else{
+        printf("%d",L);
+    }
     return 0;
 }
