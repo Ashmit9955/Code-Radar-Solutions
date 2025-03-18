@@ -19,10 +19,10 @@ int main(){
             Ssmallest = arr[i];
         }
    }
-   if(Smallest == Ssmallest){
-    printf("%d",-1);
-   }else{
+   if(Smallest != Ssmallest){
     printf("%d",Ssmallest);
+   }else{
+    printf("%d",-1);
    }
     return 0;
 }
