@@ -20,7 +20,7 @@ int main(){
         }
    }
    if(Smallest == Ssmallest){
-    printf("%d",-1)
+    printf("%d",-1);
    }else{
     printf("%d",Ssmallest);
    }
