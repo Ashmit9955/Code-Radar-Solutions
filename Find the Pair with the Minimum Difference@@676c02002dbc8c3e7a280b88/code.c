@@ -17,6 +17,11 @@ int main(){
                 Smallest = abs(arr[i] - arr[j]);
                 num1 = i;
                 num2 = j;
+            }else if(abs(arr[i] - arr[j]) == Smallest){
+                if(arr[i] < arr[num1] && arr[j] < arr[num2]){
+                    num1 = i;
+                    num2 = j;
+                }
             }
         }
     }   
