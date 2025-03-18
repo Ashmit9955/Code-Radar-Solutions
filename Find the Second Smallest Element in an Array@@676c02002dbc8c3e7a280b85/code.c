@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
    int Smallest = arr[0];
-   int Ssmallest = INT_MAX;
+   int Ssmallest = arr[0];
 
    for(int i = 0; i<n; i++){
         if(arr[i] < Smallest){
@@ -18,11 +18,6 @@ int main(){
         }else if(arr[i] > Smallest && arr[i] < Ssmallest){
             Ssmallest = arr[i];
         }
-   }
-   if(Smallest != Ssmallest){
-    printf("%d",Ssmallest);
-   }else{
-    printf("%d",-1);
    }
     return 0;
 }
