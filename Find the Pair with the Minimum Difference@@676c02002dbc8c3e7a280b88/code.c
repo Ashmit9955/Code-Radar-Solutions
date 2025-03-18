@@ -13,7 +13,7 @@ int main(){
     int Smallest = 222222;
     for(int i=0;i<n-1; i++){
         for(int j=i+1; j<n ;j++){
-            if(abs(arr[i] - arr[j]) <= Smallest){
+            if(abs(arr[i] - arr[j]) < Smallest){
                 Smallest = abs(arr[i] - arr[j]);
                 num1 = i;
                 num2 = j;
