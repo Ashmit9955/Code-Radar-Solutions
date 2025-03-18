@@ -20,6 +20,6 @@ int main(){
             }
         }
     }   
-    printf("%d %d",arr[num1],arr[num2]);
+    printf("%d %d",arr[num2],arr[num1]);
     return 0;
 }
