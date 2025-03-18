@@ -8,8 +8,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     //
-    int num1 = 0;
-    int num2 = 0;
+    int num1 = -90;
+    int num2 = -90;
     int Smallest = 222222;
     for(int i=0;i<n-1; i++){
         for(int j=i+1; j<n ;j++){
