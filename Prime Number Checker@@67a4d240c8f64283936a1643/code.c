@@ -11,9 +11,9 @@ int isPrime(int n){
 }
 int main(){
     int n;
+    int x = 0;
     scanf("%d",&n);
     for(int i=1; i<=n; i++){
-        int x = 0;
         scanf("%d",&x);
         printf(isPrime(x));
     }
