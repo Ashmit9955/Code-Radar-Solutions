@@ -7,5 +7,9 @@ int isPrime(int n){
             break;
         }
     }
-    return x;
+    if(n == 0 || n == 1){
+        return 0;
+    }else{
+        return x;
+    }
 }
