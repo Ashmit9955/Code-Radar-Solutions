@@ -1,13 +1,14 @@
 #include<stdio.h>
-int isPrime(int n){
-    if(n>=2){
-        for(int i=2; i<=n-1; i++){
-            if(n%i == 0){
-                return 0;
+void isPrime(int n , int m){
+    for(int i=n; i<=m; i++){
+        int result = 1;
+        for(int j = 2; j<i; j++){
+            if(i%j == 0){
+                result = -1;
             }
         }
-        return n;
-    }else{
-        return 0;
+        if(result == 1){
+            printf("%d ",i);
+        }
     }
 }
