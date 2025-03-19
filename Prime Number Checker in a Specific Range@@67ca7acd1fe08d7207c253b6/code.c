@@ -1,5 +1,5 @@
 #include<stdio.h>
-void isPrime(int n , int m){
+void printPrimesInRange(int n , int m){
     for(int i=n; i<=m; i++){
         int result = 1;
         for(int j = 2; j<i; j++){
