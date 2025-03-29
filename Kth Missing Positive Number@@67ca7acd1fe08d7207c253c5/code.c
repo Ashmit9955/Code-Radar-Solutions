@@ -4,7 +4,7 @@ int findKthMissing(int arr[] , int n, int k){
     for(int i=1; i<=2*(arr[n-1]); i++){
         int check = 0;
         for(int j=0; j<n; j++){
-            if(arr[i] == j){
+            if(i == arr[j]){
                 check = 1;
                 break;
             }
