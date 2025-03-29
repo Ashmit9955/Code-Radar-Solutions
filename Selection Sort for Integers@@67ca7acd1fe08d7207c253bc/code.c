@@ -15,3 +15,9 @@ void selectionSort(int arr[] ,int n){
         arr[min] = temp;
     }
 }
+void printArray(int arr[] , int n){
+    //print the arrar here
+    for(int i=0; i<n; i++){
+        printf("%d ",arr[i]);
+    }
+}
