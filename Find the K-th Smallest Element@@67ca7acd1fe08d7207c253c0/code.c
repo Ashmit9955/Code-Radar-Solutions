@@ -11,7 +11,7 @@ void bubbleSort(int arr[] , int n){
     }
 }
 int kthSmallest(int arr[] , int n, int k){
-    if(k>=n){return -1;}
+    // if(k>=n){return -1;}
     bubbleSort(arr , n);
     return arr[k-1];
 }
