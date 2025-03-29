@@ -3,10 +3,10 @@ void insertionSort(int arr[] , int n){
     for(int i=1; i<=n-1; i++){
         while(arr[i] < arr[i-1]){
             if(arr[i] < arr[i-1]){
-                //swap
+            //swap
             int temp = arr[i];
-            arr[i] = arr[i+1];
-            arr[i+1] = temp;
+            arr[i] = arr[i-1];
+            arr[i-1] = temp;
             }
         }
     }
