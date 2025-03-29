@@ -1,5 +1,6 @@
 #include<stdio.h>
 int findKthMissing(int arr[] , int n, int k){
+    int count =0;
     for(int i=arr[0]; i<=arr[n-1]; i++){
         int check = 0;
         for(int j=0; j<n; j++){
