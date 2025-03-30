@@ -15,7 +15,7 @@ int main(){
             }
         }
         //swap
-        int arr[i] = L;
+        arr[i] = L;
     }
     //Array printing
     for(int i=0; i<n; i++){
