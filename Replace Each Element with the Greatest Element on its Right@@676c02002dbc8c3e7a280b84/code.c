@@ -11,7 +11,7 @@ int main(){
         int L = -111111;
         for(int j=i; j<n; j++){
             if(arr[j] > L){
-                L = arr[i];
+                L = arr[j];
             }
         }
         //swap
