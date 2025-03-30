@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int trackscores(int scores[] ;int n; int result[]){
+int trackScores(int scores[] ;int n; int result[]){
       for(int i=0; i<n; i++){
         scanf("%d",&scores[i]);
     }
