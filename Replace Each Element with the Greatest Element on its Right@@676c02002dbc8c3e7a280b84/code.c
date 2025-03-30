@@ -8,7 +8,7 @@ int main(){
     }        
     //solving
     for(int i=0; i<n; i++){
-        int L = arr[i];
+        int L = -111111;
         for(int j=i; j<n; j++){
             if(arr[i] > L){
                 L = arr[i];
