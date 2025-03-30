@@ -9,7 +9,7 @@ void trackscores(int scores[];int n; int result[]){
     int LS = scores[0];
     int L = 0;
     for(int i=1; i<n; i++){
-        if(arr[i] > HS){
+        if(scores[i] > HS){
             HS = scores[i];
             H++;
         }else if(scores[i] < LS){
