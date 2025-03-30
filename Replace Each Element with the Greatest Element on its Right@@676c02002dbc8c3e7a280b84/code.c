@@ -18,7 +18,7 @@ int main(){
         //swap
         arr[i] = L;
     }
-    arr[n-1] = temp;
+    arr[n-1] = -1;
     //Array printing
     for(int i=0; i<n; i++){
         printf("%d ",arr[i]);
