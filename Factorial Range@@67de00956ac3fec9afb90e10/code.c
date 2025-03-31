@@ -7,6 +7,3 @@ void factorialRange(int n, int m){
         printf("%d\n",fact);
     }
 }
-int main(){
-    return 0;
-}
