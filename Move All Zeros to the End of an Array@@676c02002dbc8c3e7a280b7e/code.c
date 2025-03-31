@@ -9,7 +9,7 @@ int main(){
     //
     for(int i=0; i<n; i++){
         if(arr[i] == 0){
-            for(int j=i; j<n-1 ;j++){
+            for(int j=i; j<=n-1 ;j++){
                 //swap
                 int temp = arr[j];
                 arr[j] = arr[j+1];
