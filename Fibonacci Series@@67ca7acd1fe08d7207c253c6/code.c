@@ -6,14 +6,13 @@ void fibonacciSeries(int n){
     }
     if(n>=2){
         printf("%d ",b);
-    }else{
+    }
         for(int i=3; i<=n; i++){
             c = a+b;
             printf("%d ",c);
             a = b;
             b = c;
         }
-    }
 }
 
 // #include<stdio.h>
