@@ -2,9 +2,8 @@
 #include <string.h>
 int main(){
     char ch[20];
-    // scanf("%s",&ch);
-    int len = strlen(ch);
     fgets(ch,sizeof(ch),stdin);
+    int len = strlen(ch);
     for(int i=0; i<len/2; i++){
         char temp = ch[i];
         ch[i] = ch[len - 1 - i];
