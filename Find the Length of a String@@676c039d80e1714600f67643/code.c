@@ -5,11 +5,6 @@ int main(){
     int count =0;
     fgets(ch , sizeof(ch) , stdin);
     int len = strlen(ch);
-    for(int i=0; i<len; i++){
-        if(ch[i] != ''){
-            count++;
-        }
-    }
-    printf("%d",count);
+    printf("%d",len);
     return 0;
 }
