@@ -4,7 +4,7 @@ int main(){
     char ch[20];
     // scanf("%s",&ch);
     int len = strlen(ch);
-    fgets(ch, len, stdin);
+    fgets(ch,st sizeof(ch),stdin);
     for(int i=0; i<len/2; i++){
         char temp = ch[i];
         ch[i] = ch[len - 1 - i];
