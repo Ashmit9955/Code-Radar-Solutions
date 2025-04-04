@@ -2,13 +2,14 @@
 #include<string.h>
 int main(){
     char ch[20];
+    int count =0;
     fgets(ch , sizeof(ch) , stdin);
     int len = strlen(ch);
     for(int i=0; i<len; i++){
-        if(ch[i] == ' '){
-            len--;
+        if(ch[i] != ' '){
+            count++;
         }
     }
-    printf("%d",len);
+    printf("%d",count);
     return 0;
 }
