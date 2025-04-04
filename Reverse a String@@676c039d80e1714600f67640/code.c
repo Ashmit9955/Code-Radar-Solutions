@@ -3,7 +3,7 @@
 int main(){
     char ch[20];
     // scanf("%s",&ch);
-    fgets(ch, sizeof(namche), stdin);
+    fgets(ch, sizeof(ch), stdin);
     int len = strlen(ch);
     for(int i=0; i<len/2; i++){
         char temp = ch[i];
