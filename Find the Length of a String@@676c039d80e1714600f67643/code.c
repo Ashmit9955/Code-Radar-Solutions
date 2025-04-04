@@ -5,6 +5,12 @@ int main(){
     int count =0;
     fgets(ch , sizeof(ch) , stdin);
     int len = strlen(ch);
-    printf("%d",len);
+    int count = len;
+    for(int i=0; i<len; i++){
+        if(ch[i] == ' '){
+            count--;
+        }
+    }
+    printf("%d",count);
     return 0;
 }
