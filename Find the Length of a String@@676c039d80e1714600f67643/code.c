@@ -3,6 +3,12 @@
 int main(){
     char ch[20];
     fgets(ch , sizeof(ch) , stdin);
-    printf("%d",strlen(ch));
+    int len = strlen(ch);
+    for(int i=0; i<len; i++){
+        if(ch[i] == ' '){
+            len--;
+        }
+    }
+    printf("%d",len);
     return 0;
 }
