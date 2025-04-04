@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    int count =0;
+    // the string in c is actually an array of characters..and the end of that array
+    // is always '\0' so we can use this to get the length of the array or string
     char ch[20];
-    fgets(ch , sizeof(ch) , stdin);
-    for(int i=0; i<20; i++){
-        if(ch[i] != '$'){
-            count++;
-        }
+    fgets(ch,sizeof(ch),stdin);
+    int length = 0;
+    while(ch[length] != '\0'){
+        length++;
     }
-    printf("%d",count);
+    printf("%d",length;)
     return 0;
 }
