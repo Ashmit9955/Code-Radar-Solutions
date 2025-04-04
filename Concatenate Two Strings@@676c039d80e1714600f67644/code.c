@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    char ch1 , ch2;
+    fgets(ch1,sizeof(ch1),stdin);
+    fgets(ch2,sizeof(ch2),stdin);
+    printf("%s%s",ch1,ch2);
+    return 0;
+}
