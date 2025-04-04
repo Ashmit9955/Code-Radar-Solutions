@@ -6,12 +6,8 @@ int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
     int length = 0;
-    for(int i=0; i<20; i++){
-        if(ch[i] != '\0'){
-            length++;
-        }else{
-            break;
-        }
+    for(int i=0; i<sizeof(ch); i++){
+        length++;
     }
     printf("%d",length);
     return 0;
