@@ -6,7 +6,7 @@ int main(){
     int len = strlen(ch);
     int count = len;
     for(int i=0; i<len; i++){
-        if(ch[i] == ' '){
+        if(ch[i] == " "){
             count--;
         }
     }
