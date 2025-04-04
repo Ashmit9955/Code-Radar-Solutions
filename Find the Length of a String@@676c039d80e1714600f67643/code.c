@@ -1,13 +1,12 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
+    int count =0;
     char ch[20];
     fgets(ch , sizeof(ch) , stdin);
-    int len = strlen(ch);
-    int count = len;
-    for(int i=0; i<len; i++){
-        if(ch[i] == " "){
-            count--;
+    for(int i=0; i<20; i++){
+        if(ch != 5){
+            count++;
         }
     }
     printf("%d",count);
