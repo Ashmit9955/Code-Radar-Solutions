@@ -3,7 +3,11 @@
 int main(){
     char ch[20];
     scanf("%s",&ch);
-    for(int i=sizeof(ch) - 1; i>=0; i--){
-        printf("%c",ch[i]);
+    int len = strlen(ch);
+    for(int i=0; i<len/2; i++){
+        char temp = ch[i];
+        char ch[i] = char[len - 1 - i];
+        char[len-1-i] = temp;
     }
+    printf("%s",ch);
 }
