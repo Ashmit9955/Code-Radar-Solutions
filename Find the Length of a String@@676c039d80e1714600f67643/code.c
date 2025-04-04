@@ -9,6 +9,6 @@ int main(){
     while(ch[length] != '\0'){
         length++;
     }
-    printf("%d",length;)
+    printf("%d",length);
     return 0;
 }
