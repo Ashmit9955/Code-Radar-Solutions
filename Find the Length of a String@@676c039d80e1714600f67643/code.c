@@ -5,7 +5,7 @@ int main(){
     char ch[20];
     fgets(ch , sizeof(ch) , stdin);
     for(int i=0; i<20; i++){
-        if(ch != 5){
+        if(ch != 'c'){
             count++;
         }
     }
