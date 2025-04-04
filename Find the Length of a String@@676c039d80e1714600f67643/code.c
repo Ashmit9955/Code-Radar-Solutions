@@ -6,9 +6,11 @@ int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
     int length = 0;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<20; i++){
         if(ch[i] != '\0'){
             length++;
+        }else{
+            break;
         }
     }
     printf("%d",length);
