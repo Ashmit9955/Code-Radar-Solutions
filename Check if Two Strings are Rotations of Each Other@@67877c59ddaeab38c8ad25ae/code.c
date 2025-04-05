@@ -2,21 +2,26 @@
 #include <string.h>
 
 int main() {
-    char ch[20];
-    char ch1[20];
+    char ch[100], ch1[100];
 
+    // Read the two input strings
     scanf("%s", ch);
     scanf("%s", ch1);
-    int n = strlen(ch);
 
-    // Reverse ch in place
+    // Make a copy of ch to reverse
+    char rev[100];
+    strcpy(rev, ch);
+
+    // Reverse rev
+    int n = strlen(rev);
     for (int i = 0; i < n / 2; i++) {
-        char temp = ch[i];
-        ch[i] = ch[n - 1 - i];
-        ch[n - 1 - i] = temp;
+        char temp = rev[i];
+        rev[i] = rev[n - 1 - i];
+        rev[n - 1 - i] = temp;
     }
 
-    if (strcmp(ch, ch1) == 0) {
+    // Compare reversed ch with ch1
+    if (strcmp(rev, ch1) == 0) {
         printf("Yes\n");
     } else {
         printf("No\n");
