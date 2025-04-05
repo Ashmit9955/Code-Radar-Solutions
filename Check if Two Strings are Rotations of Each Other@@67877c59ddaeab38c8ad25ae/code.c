@@ -15,9 +15,9 @@ int main(){
         ch[n-1-i] = temp;
     }
     if(strcmp(ch,ch1)){
-        printf("Yes");
-    }else{
         printf("No");
+    }else{
+        printf("Yes");
     }
     return 0;
 }
