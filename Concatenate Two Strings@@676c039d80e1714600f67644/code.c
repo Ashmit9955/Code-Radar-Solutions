@@ -6,8 +6,8 @@ int main(){
     fgets(ch2,sizeof(ch2),stdin);
     int x = strlen(ch1);
     int y = strlen(ch2);
-    ch1[x-1] = '\0';
-    ch2[y-1] = '\0';
+    ch1[x] = '\0';
+    ch2[y] = '\0';
     printf("%s",strcat(ch1,ch2));
     return 0;
 }
