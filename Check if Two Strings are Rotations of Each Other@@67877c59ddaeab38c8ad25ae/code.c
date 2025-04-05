@@ -5,10 +5,11 @@ int main(){
     char ch1[20];
     fgets(ch,sizeof(ch),stdin);
     fgets(ch1,sizeof(ch1),stdin);
-    for(int i=0; i<(strlen(ch)/2);i++){
+    int n = strlen(ch);
+    for(int i=0; i<(n/2);i++){
         char temp = ch[i];
-        ch[i] = ch[strlen(ch)-1-i];
-        ch[strlen(ch)-1-i] = temp;
+        ch[i] = ch[n-1-i];
+        ch[n-1-i] = temp;
     }
     if(strcmp(ch,ch1)){
         printf("Yes");
