@@ -3,7 +3,7 @@
 int main(){
     char ch[20];
     char ch1[20];
-    for(int i=0; i<(strlen(ch)/2),i++){
+    for(int i=0; i<(strlen(ch)/2);i++){
         char temp = ch[i];
         ch[i] = ch[strlen(ch)-1-i];
         ch[strlen(ch)-1-i] = temp;
