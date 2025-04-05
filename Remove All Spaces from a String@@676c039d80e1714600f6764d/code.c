@@ -12,6 +12,7 @@ int main(){
             ch2[index++] = ch1[i];
         }
     }
+    ch2[index] = '\0'; // Adding this line to indicate to c that the string has ended here
     printf("%s",ch2);
     return 0;
 }
