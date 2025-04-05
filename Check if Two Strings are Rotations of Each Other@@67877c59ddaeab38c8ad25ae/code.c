@@ -21,10 +21,6 @@ int main() {
         ch[n - 1 - i] = temp;
     }
 
-    // Debug output
-    printf("Reversed ch: %s\n", ch);
-    printf("Original ch1: %s\n", ch1);
-
     if (strcmp(ch, ch1) == 0) {
         printf("Yes\n");
     } else {
