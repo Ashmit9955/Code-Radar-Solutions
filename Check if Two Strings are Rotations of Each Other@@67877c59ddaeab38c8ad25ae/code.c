@@ -6,7 +6,9 @@ int main(){
     fgets(ch,sizeof(ch),stdin);
     fgets(ch1,sizeof(ch1),stdin);
     int n = strlen(ch);
-    for(int i=0; i<(n/2);i++){
+    ch[n-1] = '\0';
+    ch[strlen(ch1)-1] = '\0';
+    for(int i=0; i< n/2;i++){
         char temp = ch[i];
         ch[i] = ch[n-1-i];
         ch[n-1-i] = temp;
