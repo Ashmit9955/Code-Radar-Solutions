@@ -7,12 +7,6 @@ int main() {
 
     scanf("%s", ch);
     scanf("%s", ch1);
-
-
-    // Handle both \n and \r\n line endings
-    ch[strcspn(ch, "\r\n")] = '\0';
-    ch1[strcspn(ch1, "\r\n")] = '\0';
-
     int n = strlen(ch);
 
     // Reverse ch in place
