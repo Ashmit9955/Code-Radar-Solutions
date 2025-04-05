@@ -5,8 +5,9 @@ int main() {
     char ch[20];
     char ch1[20];
 
-    fgets(ch, sizeof(ch), stdin);
-    fgets(ch1, sizeof(ch1), stdin);
+    scanf("%s", ch);
+    scanf("%s", ch1);
+
 
     // Handle both \n and \r\n line endings
     ch[strcspn(ch, "\r\n")] = '\0';
