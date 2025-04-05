@@ -10,10 +10,10 @@ int main(){
         ch[i] = ch[strlen(ch)-1-i];
         ch[strlen(ch)-1-i] = temp;
     }
-    if(strcmp(ch,ch1) == 0){
-        printf("No");
-    }else{
+    if(strcmp(ch,ch1)){
         printf("Yes");
+    }else{
+        printf("No");
     }
     return 0;
 }
