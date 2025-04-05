@@ -2,26 +2,27 @@
 #include <string.h>
 
 int main() {
-    char ch[100], ch1[100];
+    char str1[100], str2[100];
 
-    // Read the two input strings
-    scanf("%s", ch);
-    scanf("%s", ch1);
+    // Read both inputs as words (no spaces)
+    scanf("%s", str1);
+    scanf("%s", str2);
 
-    // Make a copy of ch to reverse
-    char rev[100];
-    strcpy(rev, ch);
+    int len = strlen(str1);
 
-    // Reverse rev
-    int n = strlen(rev);
-    for (int i = 0; i < n / 2; i++) {
-        char temp = rev[i];
-        rev[i] = rev[n - 1 - i];
-        rev[n - 1 - i] = temp;
+    // Reverse str1 into a new array
+    char reversed[100];
+    for (int i = 0; i < len; i++) {
+        reversed[i] = str1[len - 1 - i];
     }
+    reversed[len] = '\0';  // null-terminate the string
 
-    // Compare reversed ch with ch1
-    if (strcmp(rev, ch1) == 0) {
+    // Debug output
+    // printf("Reversed: %s\n", reversed);
+    // printf("Second   : %s\n", str2);
+
+    // Compare reversed string with second input
+    if (strcmp(reversed, str2) == 0) {
         printf("Yes\n");
     } else {
         printf("No\n");
