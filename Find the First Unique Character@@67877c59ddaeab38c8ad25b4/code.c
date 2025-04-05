@@ -10,11 +10,11 @@ int main(){
             if(ch[i] == ch[j]){
                 count++;
             }
-            if(count == 1){
+        }
+        if(count == 1){
                 printf("%c",ch[i]);
                 break;
             }
-        }
     }
     return 0;
 }
