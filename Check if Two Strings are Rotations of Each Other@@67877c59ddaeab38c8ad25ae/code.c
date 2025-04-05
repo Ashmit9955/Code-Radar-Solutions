@@ -5,8 +5,10 @@ int main(){
     char ch1[20];
     fgets(ch,sizeof(ch),stdin);
     fgets(ch1,sizeof(ch1),stdin);
+    ch[strcspn(ch, "\n")] = '\0';
+    ch1[strcspn(ch1, "\n")] = '\0';
+
     int n = strlen(ch);
-    ch[n-1] = '\0';
     for(int i=0; i< n/2;i++){
         char temp = ch[i];
         ch[i] = ch[n-1-i];
