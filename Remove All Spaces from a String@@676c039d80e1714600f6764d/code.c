@@ -8,7 +8,7 @@ int main(){
     int len = strlen(ch1);
     int index = 0;
     for(int i=0; i<len; i++){
-        if(ch1[i] != " "){
+        if(ch1[i] != ' '){
             ch2[index++] = ch1[i];
         }
     }
