@@ -14,7 +14,7 @@ int main(){
         ch[i] = ch[n-1-i];
         ch[n-1-i] = temp;
     }
-    if(strcmp(ch,ch1)==0){
+    if(strcmp(ch,ch1) == 0){
         printf("Yes");
     }else{
         printf("No");
