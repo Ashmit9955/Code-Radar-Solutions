@@ -2,26 +2,25 @@
 #include <string.h>
 
 int main() {
-    char str1[100], str2[100];
+    char str1[101], str2[101];
+    
+    // Take input with fgets to allow spaces and ensure full lines
+    fgets(str1, sizeof(str1), stdin);
+    fgets(str2, sizeof(str2), stdin);
 
-    // Read both inputs as words (no spaces)
-    scanf("%s", str1);
-    scanf("%s", str2);
-
-    int len = strlen(str1);
+    // Remove newline characters, if present
+    str1[strcspn(str1, "\r\n")] = '\0';
+    str2[strcspn(str2, "\r\n")] = '\0';
 
     // Reverse str1 into a new array
-    char reversed[100];
+    int len = strlen(str1);
+    char reversed[101];
     for (int i = 0; i < len; i++) {
         reversed[i] = str1[len - 1 - i];
     }
-    reversed[len] = '\0';  // null-terminate the string
+    reversed[len] = '\0';
 
-    // Debug output
-    // printf("Reversed: %s\n", reversed);
-    // printf("Second   : %s\n", str2);
-
-    // Compare reversed string with second input
+    // Compare reversed str1 with str2
     if (strcmp(reversed, str2) == 0) {
         printf("Yes\n");
     } else {
