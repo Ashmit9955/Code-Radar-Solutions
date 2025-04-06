@@ -23,7 +23,7 @@ void fun(char* ch){
                     break;
                 }
             }
-            if(check = 1){
+            if(check == 1){
                 str[num++] = ch[i];
             }
         }
