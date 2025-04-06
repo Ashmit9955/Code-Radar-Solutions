@@ -22,6 +22,11 @@ int main(){
         }
     }
     ch2[num] = '\0';
-    printf("%s",ch2);
+    if(isPalin(ch2)){
+        printf("Yes");
+    }else{
+        printf("No");
+    }
+
     return 0;
 }
