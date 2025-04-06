@@ -21,7 +21,7 @@ int main(){
     fgets(ch,sizeof(ch); stdin);
     ch[strcspn(ch,"\n")] = '\0';
     int index = fun(ch);
-    if(ch == -1){
+    if(index == -1){
         printf("%c",'-');
     }else{
         printf("%c",ch[index]);
