@@ -5,7 +5,7 @@ int main(){
     fgets(ch,sizeof(ch),stdin);
     ch[strcspn(ch,"\n")] == '\0';
     int n = strlen(ch);
-    int result = 1;
+    int result = 0;
     for(int i=0; i<n; i++){
         if(ch[i] == 1 || ch[i] == 0){
             result = 1;
