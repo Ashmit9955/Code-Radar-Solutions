@@ -5,7 +5,7 @@ int isPan(char* str){
     for(int i=0; i<len;i++){
         int count =0;
         for(int j=0; j<len; j++){
-            if(str[i] == str[j]){
+            if((str[i] == str[j]) && (str[i] >= 'a' && str[i] <= 'z')){
                 count++;
             }
         }
