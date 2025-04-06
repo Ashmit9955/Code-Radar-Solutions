@@ -7,6 +7,7 @@ int main(){
     fgets(ch,sizeof(ch),stdin);
     int length = strlen(ch);
     ch[length - 1] = '\0';
+    length = strlen(ch);
     printf("%d",length);
     return 0;
 }
