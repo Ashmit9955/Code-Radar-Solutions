@@ -18,7 +18,7 @@ int isPan(char* str){
 int main(){
     char ch[100];
     fgets(ch,sizeof(ch),stdin);
-    ch[strcspn(ch,"\n")] = '\0';
+    // ch[strcspn(ch,"\n")] = '\0';
     if(isPan(ch)){
         printf("Yes");
     }else{
