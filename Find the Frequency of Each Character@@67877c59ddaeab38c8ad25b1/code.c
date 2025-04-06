@@ -15,7 +15,7 @@ void fun(char* ch){
         }
         if(count == 1){
             str[num++] = ch[i];
-            printf("%c: %d",ch[i],count);
+            printf("%c: %d\n",ch[i],count);
         }else{
             int check = 1;
             for(int k=0; k<num;k++){
@@ -26,7 +26,7 @@ void fun(char* ch){
             }
             if(check == 1){
                 str[num++] = ch[i];
-                printf("%c: %d",ch[i],count);
+                printf("%c: %d\n",ch[i],count);
             }
         }
     }
