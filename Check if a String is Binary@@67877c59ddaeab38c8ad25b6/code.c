@@ -23,5 +23,6 @@ int main(){
     }else if(result == 0){
         printf("No");
     }
+    printf("%d",n);
     return 0;
 }
