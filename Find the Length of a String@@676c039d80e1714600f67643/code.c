@@ -7,8 +7,7 @@ int main(){
     fgets(ch,sizeof(ch),stdin);
     int n = strlen(ch);
     ch[n-2] = '\0';
-    for(int i=0; i<=n-2; i++){
-        printf("%c +",ch[i]);
-    }
+    int x = strlen(ch);
+    printf("%d",x);
     return 0;
 }
