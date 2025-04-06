@@ -7,12 +7,6 @@ int main(){
     fgets(ch,sizeof(ch),stdin);
     ch[strcspn(ch, "\n")] = '\0';
     int n = strlen(ch);
-    int length = 0;
-    for(int i=0; i<n; i++){
-        if(ch[i]){
-            length++;
-        }
-    }
-    printf("%d",length);
+    printf("%d",n);
     return 0;
 }
