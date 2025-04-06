@@ -19,10 +19,13 @@ int main(){
             }
         }
         if(result == 1){
-            printf("Yes");
-        }else{
-            printf("No");
+            break;
         }
+    }
+    if(result == 1){
+        printf("Yes");
+    }else{
+        printrf("No");
     }
     return 0;
 }
