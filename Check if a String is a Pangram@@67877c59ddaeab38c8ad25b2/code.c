@@ -1,13 +1,16 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 int isPan(char* str){
     int len = strlen(str);
     for(int i=0; i<len;i++){
         int count =0;
         for(int j=0; j<len; j++){
-            if((str[i] == str[j]) && ((str[i] >= 'a' && str[i] <= 'z') ||str[i] >= 'A' && str[i] <= 'Z')){
+           if(isalpha(str[i])){
+            if(str[i] == str[j]){
                 count++;
             }
+           }
         }
         if(str[i] != ' ' && count > 1){
             return 0;
