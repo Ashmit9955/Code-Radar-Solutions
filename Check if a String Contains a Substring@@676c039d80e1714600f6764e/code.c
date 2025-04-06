@@ -4,7 +4,7 @@
 int main(){
     char ch1[40];
     fgets(ch1,sizeof(ch1),stdin);
-    ch[strcspn(ch1,"\n")] = '\0';
+    ch1[strcspn(ch1,"\n")] = '\0';
     char ch2[40];
     fgets(ch2,sizeof(ch2),stdin);
     ch2[strcspn(ch2,"\n")] = '\0';
