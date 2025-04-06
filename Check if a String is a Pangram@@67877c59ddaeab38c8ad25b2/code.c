@@ -12,7 +12,7 @@ int isPan(char* str){
             }
            }
         }
-        if(str[i] != ' ' && count > 1){
+        if(count > 1){
             return 0;
         }
     }
