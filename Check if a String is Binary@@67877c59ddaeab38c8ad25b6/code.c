@@ -7,7 +7,11 @@ int main(){
     int n = strlen(ch);
     int result = 1;
     for(int i=0; i<n; i++){
-        if(ch[i] == '1' || ch[i] == '0'){
+        if(n==0){
+            result == 1;
+            break;
+        }
+        else if(ch[i] == '1' || ch[i] == '0'){
             result = 1;
         }else{
             result = 0;
@@ -18,8 +22,6 @@ int main(){
         printf("Yes");
     }else if(result == 0){
         printf("No");
-    }else{
-        printf("Yes");
     }
     return 0;
 }
