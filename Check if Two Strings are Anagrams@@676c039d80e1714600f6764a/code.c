@@ -10,7 +10,7 @@ int isAnagram(char* ch1, char* ch2){
         wc1[ch1[i] - 'a']++;
     }
     for(int i=0; i<len2;i++){
-        wc2[ch1[i] - 'a']++;
+        wc2[ch2[i] - 'a']++;
     }
 
     //
