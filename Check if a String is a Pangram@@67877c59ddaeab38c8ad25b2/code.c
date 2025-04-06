@@ -5,7 +5,7 @@ int isPan(char* str){
     for(int i=0; i<len;i++){
         int count =0;
         for(int j=0; j<len; j++){
-            if(str[i] == str[j]){
+            if((str[i] == str[j]) && (str[i] != ' ' || str[j] != ' ')){
                 count++;
             }
         }
@@ -18,7 +18,7 @@ int isPan(char* str){
 int main(){
     char ch[100];
     fgets(ch,sizeof(ch),stdin);
-    // ch[strcspn(ch,"\n")] = '\0';
+    ch[strcspn(ch,"\n")] = '\0';
     if(isPan(ch)){
         printf("Yes");
     }else{
