@@ -16,8 +16,10 @@ int main(){
     }
     if(result == 1){
         printf("Yes");
-    }else{
+    }else if(result == 0){
         printf("No");
+    }else{
+        printf("Yes");
     }
     return 0;
 }
