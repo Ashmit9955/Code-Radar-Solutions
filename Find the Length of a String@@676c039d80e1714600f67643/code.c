@@ -6,10 +6,7 @@ int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
 
-    int length = 0;
-    for(int i=0; i<sizeof(ch); i++){
-        length++;
-    }
+    int length = strlen(ch);
     printf("%d",length);
     return 0;
 }
