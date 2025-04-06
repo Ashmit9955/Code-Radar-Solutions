@@ -28,7 +28,7 @@ int main(){
     fgets(ch2,sizeof(ch2),stdin);
     ch1[strcspn(ch1,"\n")] = '\0';
     ch2[strcspn(ch2,"\n")] = '\0';
-    if(isAnagram(ch1,ch2)){
+    if(isAnagram(ch1,ch2) != 0){
         printf("Yes");
     }else{
         printf("No");
