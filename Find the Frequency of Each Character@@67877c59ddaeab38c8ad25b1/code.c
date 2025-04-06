@@ -36,6 +36,6 @@ int main(){
     char ch[30];
     fgets(ch,sizeof(ch),stdin);
     ch[strcspn(ch,"\n")] = '\0';
-
+    fun(ch);
     return 0;
 }
