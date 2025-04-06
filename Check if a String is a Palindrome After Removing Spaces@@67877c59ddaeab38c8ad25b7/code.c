@@ -11,8 +11,8 @@ int isPalin(char ch){
 }
 int main(){
     char ch[40];
-    int n = strlen(ch);
     fgets(ch,sizeof(ch),stdin);
+    int n = strlen(ch);
     ch[strcspn(ch,"\n")] = '\0';
     char ch2[40];
     int num =0;
