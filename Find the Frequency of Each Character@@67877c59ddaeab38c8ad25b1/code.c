@@ -14,7 +14,6 @@ void fun(char* ch){
             }
         }
         if(count == 1){
-            str[num++] = ch[i];
             printf("%c: %d\n",ch[i],count);
         }else{
             int check = 1;
