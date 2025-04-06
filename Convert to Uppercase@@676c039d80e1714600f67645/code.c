@@ -5,6 +5,8 @@ int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
     ch[strcspn(ch,"\n")] = '\0';
-    printf("%s",toupper(ch));
+    for(int i=0; i<strlen(ch); i++){
+        printf("%c",toupper(ch[i]));
+    }
     return 0;
 }
