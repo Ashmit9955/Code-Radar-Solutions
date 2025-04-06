@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<string.h>
+int isPalin(char ch){
+    int len  = strlen(ch);
+    for(int i=0; i<len/2; i++){
+        if(ch[i] != ch[len-i-1]){
+            return 0;
+        }
+    }
+    return 1;
+}
+int main(){
+    char ch[40];
+    int n = strlen(ch);
+    fgets(ch,sizeof(ch),stdin);
+    ch[strcspn(ch,"\n")] = '\0';
+    char ch2[40];
+    int num =0;
+    for(int i=0; i<n; i++){
+        if(ch[i] != ' '){
+            ch2[num++] = ch[i];
+        }
+    }
+    ch2[num] = '\0';
+    printf("%s",ch2);
+    // ch2[strlen(ch2) - 1] = '\0';
+    return 0;
+}
