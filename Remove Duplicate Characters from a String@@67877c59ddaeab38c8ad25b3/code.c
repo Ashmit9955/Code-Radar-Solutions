@@ -15,6 +15,17 @@ void fun(char* ch){
         }
         if(count == 1){
             str[num++] = ch[i];
+        }else{
+            int check = 1;
+            for(int k=0;k<num; i++){
+                if(ch[i] == str[k]){
+                    check = 0;
+                    break;
+                }
+            }
+            if(check = 1){
+                str[num++] = ch[i];
+            }
         }
     }
     printf("%s",str);
