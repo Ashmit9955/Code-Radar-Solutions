@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include<string.h>
+#include <ctype.h>
 int isPalin(char* ch){
     int len  = strlen(ch);
     for(int i=0; i<len/2; i++){
-        if(ch[i] != ch[len-i-1]){
+        if(islower(ch[i]) != islower(ch[len-i-1])){
             return 0;
         }
     }
