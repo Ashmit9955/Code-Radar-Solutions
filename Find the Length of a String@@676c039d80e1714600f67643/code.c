@@ -8,7 +8,7 @@ int main(){
     ch[strcspn(ch, "\n")] = '\0';
     int n = strlen(ch);
     int length = 0;
-    for(int i==0; i<n; i++){
+    for(int i=0; i<n; i++){
         if(ch[i]){
             length++;
         }
