@@ -8,10 +8,12 @@ int main(){
     for(int i=0; i<n; i++){
         if(ch[i]== ' '){
             printf(" ");
-        }else if(ch[i] < 97){
+        }else if(ch[i] < 97 && ch[i]>=65){
             printf("%c",ch[i] + 32);
-        }else if(ch[i] >=97){
+        }else if(ch[i] >=97 && ch[i]<=122){
             printf("%c",ch[i]-32);
+        }else{
+            printf("%c",ch[i]);
         }
     }
     return 0;
