@@ -21,8 +21,7 @@ int main(){
             ch2[num++] = ch[i];
         }
     }
-    ch2[num] = '\0';
+    // ch2[num] = '\0';
     printf("%s",ch2);
-    // ch2[strlen(ch2) - 1] = '\0';
     return 0;
 }
