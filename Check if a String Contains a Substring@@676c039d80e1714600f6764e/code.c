@@ -2,9 +2,9 @@
 #include<string.h>
 #include<ctype.h>
 int main(){
-    char ch[40];
-    fgets(ch,sizeof(ch),stdin);
-    ch[strcspn(ch,"\n")] = '\0';
+    char ch1[40];
+    fgets(ch1,sizeof(ch1),stdin);
+    ch[strcspn(ch1,"\n")] = '\0';
     char ch2[40];
     fgets(ch2,sizeof(ch2),stdin);
     ch2[strcspn(ch2,"\n")] = '\0';
