@@ -3,7 +3,7 @@
 int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
-    ch[strcspn(ch,"\n")] == '\0';
+    ch[strcspn(ch,"\n")] = '\0';
     int n = strlen(ch);
     int result = 1;
     for(int i=0; i<n; i++){
