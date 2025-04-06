@@ -18,7 +18,7 @@ int fun(char* str){
 }
 int main(){
     char ch[30];
-    fgets(ch,sizeof(ch); stdin);
+    fgets(ch,sizeof(ch), stdin);
     ch[strcspn(ch,"\n")] = '\0';
     int index = fun(ch);
     if(index == -1){
