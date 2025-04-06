@@ -10,6 +10,7 @@ int main(){
     ch2[strcspn(ch2,"\n")] = '\0';
     int n1 = strlen(ch1);
     int n2 = strlen(ch2);
+    int FinalResult = 0;
     for(int i=0; i<n1; i++){
         int result = 1;
         int num =i;
@@ -20,12 +21,14 @@ int main(){
             }
         }
         if(result == 1){
-        printf("Yes");
-        break;
-        }else{
-        printf("No");
-        break;
+            FinalResult = 1;
+            break;
         }
+    }
+    if(FinalResult == 1){
+        printf("Yes");
+    }else{
+        printf("No");
     }
     
     return 0;
