@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-int isAnagram(char ch1, char ch2){
+int isAnagram(char* ch1, char* ch2){
     int len1 = strlen(ch1);
     int len2 = strlen(ch2);
     int wc1[26] = {0};
