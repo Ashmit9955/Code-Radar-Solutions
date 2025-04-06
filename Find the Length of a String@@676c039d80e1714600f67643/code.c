@@ -6,7 +6,7 @@ int main(){
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
     int n = strlen(ch);
-
+    ch[n-2] = '\0';
     for(int i=0; i<=n-2; i++){
         printf("%c +",ch[i]);
     }
