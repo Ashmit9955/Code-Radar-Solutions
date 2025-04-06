@@ -21,8 +21,10 @@ int main(){
         }
         if(result == 1){
         printf("Yes");
+        break;
         }else{
         printf("No");
+        break;
         }
     }
     
