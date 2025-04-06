@@ -17,7 +17,7 @@ void fun(char* ch){
             str[num++] = ch[i];
         }else{
             int check = 1;
-            for(int k=0;k<num; i++){
+            for(int k=0; k<num; k++){
                 if(ch[i] == str[k]){
                     check = 0;
                     break;
