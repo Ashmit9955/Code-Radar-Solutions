@@ -4,7 +4,7 @@
 int isPalin(char* ch){
     int len  = strlen(ch);
     for(int i=0; i<len/2; i++){
-        if(islower(ch[i]) != islower(ch[len-i-1])){
+        if(tolower(ch[i]) != tolower(ch[len-i-1])){
             return 0;
         }
     }
