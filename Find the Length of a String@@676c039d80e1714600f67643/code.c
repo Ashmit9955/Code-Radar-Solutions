@@ -5,8 +5,14 @@ int main(){
     // is always '\0' so we can use this to get the length of the array or string
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
-    // ch[strcspn(ch, "\n")] = '\0';
+    ch[strcspn(ch, "\n")] = '\0';
     int n = strlen(ch);
-    printf("%d",n);
+    int length = 0;
+    for(int i==0; i<n; i++){
+        if(ch[i]){
+            length++;
+        }
+    }
+    printf("%d",length);
     return 0;
 }
