@@ -6,7 +6,7 @@ int isPan(char* str){
     int result =0;
     for(int i=0; i<26; i++){
         for(int j=0; j<len; j++){
-            if(('a' + i) == str[j]){
+            if(('a' + i) == tolower(str[j])){
                 result = 1;
             }
         }
