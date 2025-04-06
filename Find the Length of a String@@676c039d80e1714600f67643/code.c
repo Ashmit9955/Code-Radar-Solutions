@@ -5,9 +5,9 @@ int main(){
     // is always '\0' so we can use this to get the length of the array or string
     char ch[20];
     fgets(ch,sizeof(ch),stdin);
-    int length = strlen(ch);
-    ch[length - 1] = '\0';
-    length = strlen(ch);
-    printf("%d",length);
+    int n = strlen(ch);
+    for(int i=0; i<n; i++){
+        printf("%c +",ch[i]);
+    }
     return 0;
 }
