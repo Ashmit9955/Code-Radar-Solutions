@@ -6,7 +6,7 @@ int isPan(char* str){
     for(int i=0; i<len;i++){
         int count =0;
         for(int j=0; j<len; j++){
-           if(isalpha(str[i])){
+           if(isalpha(str[i]) && isalpha(str[j])){
             if(str[i] == str[j]){
                 count++;
             }
