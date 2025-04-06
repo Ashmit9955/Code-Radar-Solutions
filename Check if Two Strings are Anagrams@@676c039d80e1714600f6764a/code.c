@@ -6,10 +6,10 @@ int isAnagram(char* ch1, char* ch2){
     int len2 = strlen(ch2);
     int wc1[26] = {0};
     int wc2[26] = {0};
-    for(int i=0; i<26;i++){
+    for(int i=0; i<len1;i++){
         wc1[ch1[i] - 'a']++;
     }
-    for(int i=0; i<26;i++){
+    for(int i=0; i<len2;i++){
         wc2[ch1[i] - 'a']++;
     }
 
