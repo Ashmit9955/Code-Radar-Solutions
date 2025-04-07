@@ -20,7 +20,7 @@ int main(){
         check++;
     }
     if(result >=0){
-        printf("%d",LD);
+        printf("%d",result);
     }else{
         printf("%d",0);
     }
