@@ -9,7 +9,7 @@ int main(){
     while(decimal > 0){
         int LD = decimal%2;
         decimal = decimal / 2;
-        binary = binary + LD * ((int)pow(10,power++));
+        binary = binary + LD * (int)pow(10,power++);
     }
     printf("%d",binary);
 
