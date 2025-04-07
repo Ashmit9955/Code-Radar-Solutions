@@ -13,14 +13,16 @@ int main(){
         decimal = decimal / 2;
         binary = binary + LD * power;
         power = power * 10;
+        if(check == p){
+            result = LD;
+            break;
+        }
         check++;
     }
-    if(check - p == 1){
+    if(result >=0){
         printf("%d",LD);
-    }else if(check - p == 2){
-        printf("%d",LD);
+    }else{
+        printf("%d",0);
     }
-    
-
     return 0;
 }
