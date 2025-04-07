@@ -18,9 +18,9 @@ int main(){
         }
         check++;
     }
-    if(check > p)[
+    if(check > p){
         printf("%d",0);
-    ]
+    }
     
 
     return 0;
