@@ -16,10 +16,10 @@ int main(){
         if(check == p){
             printf("%d",LD);
         }
-        check++;
-    }
-    if(check > p){
+        if(check > p){
         printf("%d",0);
+    }
+        check++;
     }
     
 
