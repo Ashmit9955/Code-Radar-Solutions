@@ -7,6 +7,7 @@ int main(){
     int power = 1;
     int check = 0;
     int binary = 0;
+    
     while(decimal > 0){
         int LD = decimal%2;
         decimal = decimal / 2;
@@ -17,6 +18,9 @@ int main(){
         }
         check++;
     }
+    if(check > p)[
+        printf("%d",0);
+    ]
     
 
     return 0;
