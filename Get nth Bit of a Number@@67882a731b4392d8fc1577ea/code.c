@@ -16,9 +16,6 @@ int main(){
         if(check == p){
             printf("%d",LD);
         }
-        if(check > p){
-        printf("%d",0);
-    }
         check++;
     }
     
