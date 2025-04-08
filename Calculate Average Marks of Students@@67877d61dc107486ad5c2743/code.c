@@ -18,6 +18,6 @@ int main(){
     for(int i=0; i<n; i++){
         sum += arr[i].marks;
     }
-    printf("%.2f",sum/n);
+    printf("Average Marks: %.2f",sum/n);
     return 0;
 }
