@@ -29,12 +29,14 @@ int main(){
                 Largest = arr[i].price;
             }
         }
-
-
         for(int i=0;i<n;i++){
             if(arr[i].price != smallest && arr[i].price != Largest){
                 Premium_Price = arr[i].price;
+                break;
             }
+        }
+
+        for(int i=0;i<n;i++){
             if(arr[i].price == Premium_Price){
                 Premium_Price += arr[i].price;
             }
