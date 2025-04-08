@@ -28,5 +28,6 @@ int main(){
             bike_amount+= arr[i].amount;
         }
     }    
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f",car_amount,truck_amount,bike_amount);
     return 0;
 }
