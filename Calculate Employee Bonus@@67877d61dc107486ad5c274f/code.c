@@ -14,13 +14,13 @@ int main(){
     for(int i=0;i<n; i++){
         scanf("%d",&arr[i].id);
         scanf("%s",arr[i].name);
-        scanf("%f",&arr[i].bonus);
+        scanf("%f",&arr[i].salary);
     }
     for(int i=0;i<n; i++){
         if(arr[i].salary < 50000){
-            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.1);
+            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].salary)*0.1);
         }else{
-            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.05);
+            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].salary)*0.05);
 
         }
     }
