@@ -23,6 +23,6 @@ int main(){
             index = i;
         }
     }
-    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",arr[i].roll,arr[i].name,arr[i].marks);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",arr[index].roll,arr[index].name,arr[index].marks);
     return 0;
 }
