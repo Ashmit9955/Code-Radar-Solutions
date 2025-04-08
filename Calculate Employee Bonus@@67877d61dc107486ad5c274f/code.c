@@ -17,7 +17,12 @@ int main(){
         scanf("%f",&arr[i].bonus);
     }
     for(int i=0;i<n; i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.1);
+        if(arr[i].salary < 50000){
+            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.1);
+        }else{
+            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.05);
+
+        }
     }
     return 0;
 }
