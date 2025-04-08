@@ -9,8 +9,8 @@ int main(){
     }Rectangle;
     Rectangle arr[n];
     for(int i=0; i<n; i++){
-        scanf("%d",arr[i].length);
-        scanf("%d",arr[i].breadth);
+        scanf("%d",&arr[i].length);
+        scanf("%d",&arr[i].breadth);
     }
     for(int i=0; i<n; i++){
         printf("Rectangle %d: Area = %.2f, Perimeter: %f",i+1,arr[i].length * arr[i].breadth,2*(arr[i].length + arr[i].breadth));
