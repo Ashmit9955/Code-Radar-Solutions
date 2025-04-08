@@ -20,7 +20,7 @@ int main(){
     for(int i=0; i<n;i++){
         sum+= arr[i].marks;
     }
-    printf("Total Marks: %.2f",sum);
+    printf("Total Marks: %.2f\n",sum);
     printf("Average Marks: %.2f",sum/2);
     return 0;
 }
