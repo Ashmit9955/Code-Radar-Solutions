@@ -10,7 +10,7 @@ int main(){
     }Student;
     Student arr[n];
     for(int i=0; i<n; i++){
-        scanf("%d",arr[i].roll);
+        scanf("%d",&arr[i].roll);
         scanf("%s",arr[i].name);
         scanf("%f",&arr[i].marks);
     }
