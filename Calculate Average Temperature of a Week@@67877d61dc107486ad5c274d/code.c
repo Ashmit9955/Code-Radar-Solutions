@@ -4,11 +4,13 @@
 int main(){
     typedef struct Week{
         char day[20];
-        int temp;
+        float temp;
     }Week;
     Week arr[7];
+    float sum = 0;
     for(int i=0; i<7;i++){
-        
+        sum+= arr[i].temp;
     }
+    printf("Average Temperature: %.2f",sum/7);
     return 0;
 }
