@@ -23,5 +23,8 @@ int main(){
             flag = 0;
        }
     }
+    if(flag == 1){
+        printf("All Passed");
+    }
     return 0;
 }
