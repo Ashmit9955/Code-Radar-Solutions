@@ -2,9 +2,9 @@
 #include<string.h>
 int main(){
     int n;
-    int Standard_Price = 0;
-    int Premium_Price = 0;
-    int VIP_Price = 0;
+    float Standard_Price = 0;
+    float Premium_Price = 0;
+    float VIP_Price = 0;
     scanf("%d",&n);
     typedef struct Movie{
         char name[20];
@@ -36,17 +36,17 @@ int main(){
                 Premium_Price = arr[i].price;
             }
             if(arr[i].price == Premium_Price){
-                Premium_Price+= arr[i].price;
+                Premium_Price += arr[i].price;
             }
             else if(arr[i].price == smallest){
-                Standard_Price+=arr[i].price;
+                Standard_Price += arr[i].price;
             }
             else if(arr[i].price == Largest){
-                VIP_Price+=arr[i].price;
+                VIP_Price += arr[i].price;
             }
         }
-        printf("Standard: %.2f,",Standard_Price);
-        printf("Premium: %.2f,",Premium_Price);
+        printf("Standard: %.2f, ",Standard_Price);
+        printf("Premium: %.2f, ",Premium_Price);
         printf("VIP: %.2f",VIP_Price);
 
     
