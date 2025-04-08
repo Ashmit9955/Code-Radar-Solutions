@@ -33,16 +33,16 @@ int main(){
 
         for(int i=0;i<n;i++){
             if(arr[i].price != smallest && arr[i].price != Largest){
-                Premium_Price = arr[i];
+                Premium_Price = arr[i].price;
             }
-            if(arr[i] == Premium_Price){
-                Premium_Price+= arr[i];
+            if(arr[i].price == Premium_Price){
+                Premium_Price+= arr[i].price;
             }
-            else if(arr[i] == smallest){
-                Standard_Price+=arr[i];
+            else if(arr[i].price == smallest){
+                Standard_Price+=arr[i].price;
             }
-            else if(arr[i] == Largest){
-                VIP_Price+=arr[i];
+            else if(arr[i].price == Largest){
+                VIP_Price+=arr[i].price;
             }
         }
         printf("Standard: %.2f,",Standard_Price);
