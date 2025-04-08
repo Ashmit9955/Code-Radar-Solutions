@@ -11,7 +11,7 @@ int main(){
     Student arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",arr[i].roll);
-        scanf("%s",&arr[i].name);
+        scanf("%s",arr[i].name);
         scanf("%f",&arr[i].marks);
     }
     for(int i=0; i<n;i++){
