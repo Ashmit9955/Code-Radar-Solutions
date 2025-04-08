@@ -20,8 +20,8 @@ int main(){
     }
     // Finding all type Price
     int middle = 0;
-    float smallest = arr[0].price;
-    float Largest = arr[0].price;
+    float smallest = 909809;
+    float Largest = -344334;
     for(int i=0; i<n; i++){
             if(smallest > arr[i].price){
                 smallest = arr[i].price;
