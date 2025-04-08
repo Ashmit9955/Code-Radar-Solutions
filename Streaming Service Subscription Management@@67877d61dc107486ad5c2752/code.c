@@ -34,8 +34,8 @@ int main(){
             Pcount++;
         }
     }
-    printf("Basic: %d Users, Revenue: %.2f;\n",Bcount,basic);
-    printf("Standard: %d Users, Revenue: %.2f;\n",Scount,standard);
+    printf("Basic: %d Users, Revenue: %.2f; ",Bcount,basic);
+    printf("Standard: %d Users, Revenue: %.2f; ",Scount,standard);
     printf("Premium: %d Users, Revenue: %.2f",Pcount,premium);
 
     return 0;
