@@ -19,7 +19,7 @@ int main(){
         scanf("%f",&arr[i].price);
     }
     // Finding all type Price
-    int middle = 0;
+    float middle = 0;
     float smallest = 909809;
     float Largest = -344334;
     for(int i=0; i<n; i++){
@@ -31,15 +31,15 @@ int main(){
             }
         }
 
-        for(int i=0;i<n;i++){
-            if(arr[i].price != smallest && arr[i].price != Largest){
-                middle = arr[i].price;
-                break;
-            }
-        }
+        // for(int i=0;i<n;i++){
+        //     if(arr[i].price != smallest && arr[i].price != Largest){
+        //         middle = arr[i].price;
+        //         break;
+        //     }
+        // }
 
         for(int i=0;i<n;i++){
-            if(arr[i].price == middle){
+            if(arr[i].price != smallest && arr[i].price != Largest){
                 Premium_Price += arr[i].price;
             }
             else if(arr[i].price == smallest){
