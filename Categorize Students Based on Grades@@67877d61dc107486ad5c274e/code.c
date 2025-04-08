@@ -18,7 +18,7 @@ int main(){
         if(arr[i].marks >= 85){
             printf("Roll Number: %d, Name: %s, Grade: A\n",arr[i].roll,arr[i].name);
         }
-        else if(arr[i].marks >= 70 && arr[i].marks < 84){
+        else if(arr[i].marks >= 70 && arr[i].marks < 85){
             printf("Roll Number: %d, Name: %s, Grade: B\n",arr[i].roll,arr[i].name);
         }
         else if(arr[i].marks < 70){
