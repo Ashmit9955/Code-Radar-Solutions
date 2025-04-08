@@ -16,7 +16,7 @@ int main(){
     for(int i=0; i<n ;i++){
         scanf("%s",arr[0].name);
         scanf("%s",arr[0].type);
-        scanf("%f",arr[0].price);
+        scanf("%f",&arr[0].price);
     }
     // Finding all type Price
     float smallest = arr[0].price;
