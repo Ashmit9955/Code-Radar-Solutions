@@ -15,7 +15,7 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%s",arr[i].car_num);
         scanf("%s",arr[i].type);
-        scanf("%d",&arr[i].amount);
+        scanf("%f",&arr[i].amount);
     }
     for(int i=0;i<n;i++){
         if(arr[i].type[0] == 'C'){
