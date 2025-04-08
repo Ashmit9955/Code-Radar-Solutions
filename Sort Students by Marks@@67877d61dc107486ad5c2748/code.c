@@ -6,27 +6,34 @@ int main(){
         int roll;
         char name[20];
         float marks;
-    }Student,Student2;
-    Student2 = Student;
+        int rank;
+    }Student;
     Student arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i].roll);
         scanf("%s",arr[i].name);
         scanf("%f",&arr[i].marks);
     }
+
+    float marks[n];
+    for(int i=0;i<n;i++){
+        marks[i] = arr[i].marks;
+    }
     for(int i=0; i<n-1; i++){
         for(int j=0;j<n-i-1; j++){
-            if(arr[j].marks > arr[j+1].marks){
+            if(marks[j] > marks[j+1]){
                 //swap code;
-                float temp = arr[j].marks;
-                arr[j].marks = arr[j+1].marks;
-                arr[j+1].marks = temp;
+                float temp = marks[j];
+                 marks[j]=marks[j+1] ;
+                 marks[j+1]= temp;
             }
         }
     }
+
+
     for(int i=n-1; i>=0; i--){
         for(int j=0; j<n; j++){
-            if(arr[i].marks == arr[j].marks){
+            if(marks[i] == arr[j].marks){
                 printf("Roll Number: %d, Name: %s, Marks: %.2f\n",arr[j].roll,arr[j].name,arr[j].marks);
             }
         }
