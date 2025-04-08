@@ -20,16 +20,14 @@ int main(){
     }   
 
     for(int i=0; i<n;i++){
-        for(int j=0;j<1;j++){
-            if(arr[i].type[j] == 'S'){
-                Standard_Price += arr[i].price;
-            }
+        if(arr[i].type[0] == 'S'){
+            Standard_Price += arr[i].price;
+        }else if(arr[i].type[0] == 'P'){
+            Premium_Price += arr[i].price;
+        }else if(arr[i].type[0] == 'V'){
+            VIP_Price+=arr[i].price;
         }
-    }
-    
-
-    
-    
+    }    
     
     printf("Standard: %.2f, ",Standard_Price);
     printf("Premium: %.2f, ",Premium_Price);
