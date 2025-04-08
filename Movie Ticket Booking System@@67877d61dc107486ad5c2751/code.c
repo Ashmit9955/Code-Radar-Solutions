@@ -14,9 +14,9 @@ int main(){
 
     Movie arr[n];
     for(int i=0; i<n ;i++){
-        scanf("%s",arr[0].name);
-        scanf("%s",arr[0].type);
-        scanf("%f",&arr[0].price);
+        scanf("%s",arr[i].name);
+        scanf("%s",arr[i].type);
+        scanf("%f",&arr[i].price);
     }
     // Finding all type Price
     float smallest = arr[0].price;
