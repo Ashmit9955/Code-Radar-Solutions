@@ -6,7 +6,7 @@ int main(){
     typedef struct Rectangle{
         float length;
         float breadth;
-    }
+    }Rectangle;
     Rectangle arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",arr[i].length);
