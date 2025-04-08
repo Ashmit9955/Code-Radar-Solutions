@@ -7,7 +7,7 @@ int main(){
         int roll;
         char name[20];
         float marks;
-    };
+    }Student;
     struct Student arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i].roll);
