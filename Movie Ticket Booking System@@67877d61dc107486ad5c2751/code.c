@@ -32,7 +32,7 @@ int main(){
 
 
         for(int i=0;i<n;i++){
-            if(arr[i].price != smallest && arr[i] != Largest){
+            if(arr[i].price != smallest && arr[i].price != Largest){
                 Premium_Price = arr[i];
             }
             if(arr[i] == Premium_Price){
