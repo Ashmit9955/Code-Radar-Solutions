@@ -21,7 +21,7 @@ int main(){
         if(arr[i].roll== target){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",arr[i].roll,arr[i].name,arr[i].marks);
             flag = 1;
-            break
+            break;
         }
     }
     if(flag == 0){
