@@ -10,7 +10,7 @@ int main(){
     Student arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i].roll);
-        scanf("%s",&arr[i].name);
+        scanf("%s",arr[i].name);
         scanf("%f",&arr[i].marks);
     }
     for(int i=0; i<n-1; i++){
@@ -23,7 +23,7 @@ int main(){
             }
         }
     }
-    for(int i=n-1; i>=0; i++){
+    for(int i=n-1; i>=0; i--){
         for(int j=0; j<n; j++){
             if(arr[i].marks == arr[j].marks){
                 printf("Roll Number: %d, Name: %s, Marks: %.2f\n",arr[j].roll,arr[j].name,arr[j].marks);
