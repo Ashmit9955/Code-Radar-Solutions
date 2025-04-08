@@ -18,7 +18,7 @@ int main(){
     }
     int flag = 1;
     for(int i=0; i<n; i++){
-       if(!)(arr[i].marks > 50){
+       if(!(arr[i].marks > 50)){
         printf("Not All Passed");
             flag = 0;
        }
