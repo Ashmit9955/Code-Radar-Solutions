@@ -17,7 +17,7 @@ int main(){
         scanf("%f",&arr[i].bonus);
     }
     for(int i=0;i<n; i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.1);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",arr[i].id,arr[i].name,(arr[i].bonus)*0.1);
     }
     return 0;
 }
