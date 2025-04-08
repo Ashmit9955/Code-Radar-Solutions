@@ -17,41 +17,23 @@ int main(){
         scanf("%s",arr[i].name);
         scanf("%s",arr[i].type);
         scanf("%f",&arr[i].price);
-    }
-    // Finding all type Price
-    float middle = 0;
-    float smallest = 909809;
-    float Largest = -344334;
-    for(int i=0; i<n; i++){
-            if(smallest > arr[i].price){
-                smallest = arr[i].price;
-            }
-            if(Largest < arr[i].price){
-                Largest = arr[i].price;
-            }
-        }
+    }   
 
-        // for(int i=0;i<n;i++){
-        //     if(arr[i].price != smallest && arr[i].price != Largest){
-        //         middle = arr[i].price;
-        //         break;
-        //     }
-        // }
-
-        for(int i=0;i<n;i++){
-            if(arr[i].price != smallest && arr[i].price != Largest){
-                Premium_Price += arr[i].price;
-            }
-            else if(arr[i].price == smallest){
+    for(int i=0; i<n;i++){
+        for(int j=0;j<1;j++){
+            if(arr[i].type[j] == 'S'){
                 Standard_Price += arr[i].price;
             }
-            else if(arr[i].price == Largest){
-                VIP_Price += arr[i].price;
-            }
         }
-        printf("Standard: %.2f, ",Standard_Price);
-        printf("Premium: %.2f, ",Premium_Price);
-        printf("VIP: %.2f",VIP_Price);
+    }
+    
+
+    
+    
+    
+    printf("Standard: %.2f, ",Standard_Price);
+    printf("Premium: %.2f, ",Premium_Price);
+    printf("VIP: %.2f",VIP_Price);
 
     
     return 0;
