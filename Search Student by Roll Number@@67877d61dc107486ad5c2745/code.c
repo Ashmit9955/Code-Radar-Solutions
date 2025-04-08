@@ -25,7 +25,7 @@ int main(){
         }
     }
     if(flag == 0){
-        printf("Student not Found");
+        printf("Student not found");
     }
     return 0;
 }
