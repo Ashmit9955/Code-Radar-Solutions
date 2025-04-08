@@ -14,9 +14,9 @@ int main(){
         scanf("%s",&arr[i].name);
         scanf("%f",&arr[i].marks);
     }
-    int sum = 0;
+    float sum = 0;
     for(int i=0; i<n; i++){
-        sum+=arr[i].marks;
+        sum += arr[i].marks;
     }
     printf("%.2f",sum/n);
     return 0;
