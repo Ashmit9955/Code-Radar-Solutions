@@ -24,6 +24,6 @@ int main(){
             count++;
         }
     }
-    printf("Count of students scoring above %.1f: %d",target,count);
+    printf("Count of students scoring above %.2f: %d",target,count);
     return 0;
 }
