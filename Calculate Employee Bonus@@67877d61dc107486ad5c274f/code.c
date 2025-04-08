@@ -8,7 +8,7 @@ int main(){
     typedef struct Student{
         int id;
         char name[20];
-        float bonus;
+        float salary;
     }Student;
     Student arr[n];
     for(int i=0;i<n; i++){
